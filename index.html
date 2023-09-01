@@ -12,62 +12,60 @@
   </head>
 
   <body id="body">
-    <div class="d-flex justify-content-center">
-      <button type="button" onclick="dark()" class="btn btn-info m-3">
+    <div class="d-flex flex-wrap justify-content-center gap-lg-3 gap-2 mt-2">
+      <button type="button" onclick="dark()" class="btn btn-info">
         <i class="fa-solid fa-moon"></i>
       </button>
-      <button
-        type="button"
-        onclick="light()"
-        class="btn btn-info m-3 text-light"
-      >
+      <button type="button" onclick="light()" class="btn btn-info text-light">
         <i class="fa-solid fa-sun"></i>
       </button>
-      <button type="button" onclick="bigger()" class="btn btn-info m-3">
+      <button type="button" onclick="bigger()" class="btn btn-info">
         <i class="fa-solid fa-font fa-lg"></i>
       </button>
-      <button type="button" onclick="smaller()" class="btn btn-info m-3">
+      <button type="button" onclick="smaller()" class="btn btn-info">
         <i class="fa-solid fa-font fa-sm"></i>
       </button>
     </div>
     <div
-      class="container-fluid p-3 w-50 rounded d-flex flex-wrap justify-content-center"
+      class="container p-3 mt-4 my-2 rounded d-flex flex-wrap justify-content-center"
       style="background-color: #eee"
     >
       <p class="fw-bold">Simple Calculator</p>
       <input
-        type="text"
+        type="number"
         class="form-control mb-3"
         id="num1"
         placeholder="Enter the First number"
+        style="font-size: 1em"
       />
       <input
-        type="text"
+        type="number"
         class="form-control mb-3"
         id="num2"
         placeholder="Enter the Second number"
+        style="font-size: 1em"
       />
-      <div class="d-flex justify-content-center">
-        <button type="button" onclick="add()" class="btn btn-secondary mx-2">
+      <div class="d-flex justify-content-center w-100 flex-wrap gap-2">
+        <button type="button" onclick="add()" class="btn btn-secondary">
           <i class="fa-solid fa-plus fa-xl"></i>
         </button>
-        <button type="button" onclick="sub()" class="btn btn-secondary mx-2">
+        <button type="button" onclick="sub()" class="btn btn-secondary">
           <i class="fa-solid fa-minus fa-xl"></i>
         </button>
-        <button type="button" onclick="multi()" class="btn btn-secondary mx-2">
+        <button type="button" onclick="multi()" class="btn btn-secondary">
           <i class="fa-solid fa-xmark fa-xl"></i>
         </button>
-        <button type="button" onclick="divid()" class="btn btn-secondary mx-2">
+        <button type="button" onclick="divid()" class="btn btn-secondary">
           <i class="fa-solid fa-divide fa-xl"></i>
         </button>
       </div>
       <div
-        class="mx-2 d-flex justify-content-center align-items-center rounded w-25 text-info"
+        class="d-flex justify-content-center flex-wrap align-items-center rounded w-auto mt-3 text-info"
         style="background-color: #fff"
         id="res"
       >
         <p class="m-2 fw-bold">Result:</p>
-        <div id="result"></div>
+        <div class="me-sm-3 m-2" id="result"></div>
       </div>
     </div>
     <script src="./main.js"></script>
